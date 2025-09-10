@@ -3,9 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lim</title>
+    <title>Mathematics Research Lab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2193b0, #6dd5ed);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .research-areas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .area-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .area-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .area-card h3 {
+            color: #2193b0;
+            margin-top: 0;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>Mathematics Research Laboratory</h1>
+        <p>Exploring the Frontiers of Mathematical Science</p>
+    </header>
+
+    <div class="container">
+        <div class="research-areas">
+            <div class="area-card">
+                <h3>Number Theory</h3>
+                <p>Research on prime numbers, algebraic structures, and mathematical patterns.</p>
+            </div>
+            <div class="area-card">
+                <h3>Applied Mathematics</h3>
+                <p>Mathematical modeling, differential equations, and numerical analysis.</p>
+            </div>
+            <div class="area-card">
+                <h3>Topology</h3>
+                <p>Study of geometric properties and spatial relations unaffected by continuous deformation.</p>
+            </div>
+            <div class="area-card">
+                <h3>Mathematical Physics</h3>
+                <p>Mathematical methods in physics and theoretical physics problems.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Mathematics Research Laboratory | All Rights Reserved</p>
+    </footer>
 </body>
 </html>
